@@ -2,7 +2,7 @@ import { Link as ScrollLink } from "react-scroll";
 
 export default function Hero() {
     return (
-      <section className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+      <section id="Home" className="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
         
         {/* LEFT */}
         <div>
@@ -31,7 +31,7 @@ export default function Hero() {
         {/* RIGHT */}
         <div className="">
           <img
-            src="./images/flower2.webp"
+            src="https://i.pinimg.com/webp/1200x/af/01/c3/af01c37c8da6dfd3d0330a1fbdbd761e.webp"
             alt="flowers"
             className="rounded-3xl w-full object-cover"
           />

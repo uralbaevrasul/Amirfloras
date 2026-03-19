@@ -19,9 +19,10 @@ const Roots = () => {
       <Navbar />
 
       <Routes>
+        
         <Route path="/" element={
           <>
-            <Hero/>
+          <Hero/>
             <Catalog/>
             <FlowerShopLanding/>
             <Commnets/>

@@ -361,7 +361,6 @@ export default function Catalog() {
         <h2 className="text-4xl font-serif font-bold text-gray-900 mb-2">
           Наш Каталог
         </h2>
-        <div className="w-25 h-1 bg-pink-400 mx-auto"></div>
       </div>
 
       {/* FILTER */}

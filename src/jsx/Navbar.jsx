@@ -14,9 +14,12 @@ const Navbar = () => {
           <div className="w-8 h-8 flex items-center justify-center border-2 border-pink-400 rounded-lg group-hover:bg-pink-50 transition-colors">
             <div className="w-4 h-4 bg-pink-400 rounded-sm rotate-45"></div>
           </div>
+          <ScrollLink to="Home" smooth={true} 
+            duration={500}>
           <span className="text-2xl font-serif font-bold text-pink-400 tracking-tight">
             Amirfloras
           </span>
+          </ScrollLink>
         </Link>
 
         {/* 2. Menyu (Markaziy qism) */}
