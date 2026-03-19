@@ -386,52 +386,52 @@ export default function Catalog() {
       </div>
 
       {/* GRID */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        {filteredData.map((item) => (
-          <div
-            key={item.id}
-            className="group bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col"
+<div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8">
+  {filteredData.map((item) => (
+    <div
+      key={item.id}
+      className="group bg-white rounded-[1.5rem] md:rounded-[2rem] overflow-hidden border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-500 flex flex-col"
+    >
+      {/* IMAGE CONTAINER */}
+      <div className="relative h-48 md:h-80 overflow-hidden">
+        <img
+          src={item.img}
+          alt={item.name}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+        />
+        {/* Overlay on hover */}
+        <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <Link
+            to={`/Product/${item.id}`}
+            className="bg-white/90 p-2 md:p-3 rounded-full text-pink-500 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
           >
-            {/* IMAGE CONTAINER */}
-            <div className="relative h-80 overflow-hidden">
-              <img
-                src={item.img}
-                alt={item.name}
-                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-              />
-              {/* Overlay on hover */}
-              <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                <Link
-                  to={`/Product/${item.id}`}
-                  className="bg-white/90 p-3 rounded-full text-pink-500 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
-                >
-                  <Eye size={24} />
-                </Link>
-              </div>
-            </div>
-
-            {/* CONTENT */}
-            <div className="p-6 flex flex-col flex-grow">
-              <div className="mb-4">
-                <h3 className="text-lg font-bold text-gray-800 line-clamp-2 leading-tight h-12">
-                  {item.name}
-                </h3>
-                <p className="text-2xl font-black text-pink-500 mt-2">
-                  {item.price}
-                </p>
-              </div>
-
-              {/* BUTTON */}
-              <Link
-                to={`/Product/${item.id}`}
-                className="mt-auto w-full py-3 bg-pink-500 text-white text-center rounded-xl font-semibold hover:bg-pink-700 transition-colors duration-300 flex items-center justify-center gap-2"
-              >
-                Подробнее
-              </Link>
-            </div>
-          </div>
-        ))}
+            <Eye size={20} className="md:w-6 md:h-6" />
+          </Link>
+        </div>
       </div>
+
+      {/* CONTENT */}
+      <div className="p-3 md:p-6 flex flex-col flex-grow">
+        <div className="mb-2 md:mb-4">
+          <h3 className="text-sm md:text-lg font-bold text-gray-800 line-clamp-2 leading-tight h-10 md:h-12">
+            {item.name}
+          </h3>
+          <p className="text-lg md:text-2xl font-black text-pink-500 mt-1 md:mt-2">
+            {item.price}
+          </p>
+        </div>
+
+        {/* BUTTON */}
+        <Link
+          to={`/Product/${item.id}`}
+          className="mt-auto w-full py-2 md:py-3 bg-pink-500 text-white text-xs md:text-base text-center rounded-lg md:rounded-xl font-semibold hover:bg-pink-700 transition-colors duration-300 flex items-center justify-center gap-2"
+        >
+          Подробнее
+        </Link>
+      </div>
+    </div>
+  ))}
+</div>
     </section>
   );
 }

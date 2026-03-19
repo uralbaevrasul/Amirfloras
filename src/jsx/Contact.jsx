@@ -52,7 +52,7 @@ export default function Contact() {
       <div className="relative group">
         <div className="absolute -inset-4 bg-pink-100/50 rounded-[2.5rem] blur-2xl group-hover:bg-pink-200/50 transition duration-500"></div>
         <img
-          src="./images/florist.png"
+          src="https://img.freepik.com/free-photo/smiling-female-florist-holding-basket-flowers_23-2147882381.jpg?semt=ais_rp_progressive&w=740&q=80"
           alt="Наш флорист"
           className="relative rounded-[2rem] w-full h-[500px] object-cover shadow-2xl transition-transform duration-500"
         />
