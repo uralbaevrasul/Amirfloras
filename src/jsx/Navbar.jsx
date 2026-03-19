@@ -56,36 +56,38 @@ const Navbar = () => {
         </div>
 
         {/* 3. O'ng tomon (Aloqa) */}
-        <div className="flex items-center gap-3 md:gap-6">
-          <div className="hidden sm:flex items-center gap-3">
-            <a 
-              href="https://t.me/amirfloras" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-2 text-gray-400 hover:text-blue-500 hover:bg-blue-50 rounded-full transition-all"
-            >
-              <Send size={20} />
-            </a>
-            <a 
-              href="https://instagram.com/amirfloras" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-2 text-gray-400 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all"
-            >
-              <Instagram size={20} />
-            </a>
-          </div>
+        <div className="flex items-center gap-2 md:gap-6">
+  {/* 'hidden sm:flex' olib tashlandi, 'flex' qilindi */}
+  <div className="flex items-center gap-1 md:gap-3">
+    <a 
+      href="https://t.me/amirfloras" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="p-2 text-gray-400 hover:text-blue-500 hover:bg-blue-50 rounded-full transition-all"
+    >
+      <Send size={20} />
+    </a>
+    <a 
+      href="https://instagram.com/amirfloras" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="p-2 text-gray-400 hover:text-pink-500 hover:bg-pink-50 rounded-full transition-all"
+    >
+      <Instagram size={20} />
+    </a>
+  </div>
 
-          <div className="h-8 w-[1px] bg-gray-100 hidden lg:block"></div>
+  <div className="h-8 w-[1px] bg-gray-100 hidden lg:block"></div>
 
-          <a 
-            href="tel:+998958055151" 
-            className="flex items-center gap-2 bg-pink-500 text-white px-4 py-2 rounded-full text-sm font-bold hover:bg-pink-600 transition-all shadow-md shadow-pink-100 active:scale-95"
-          >
-            <Phone size={16} fill="currentColor" />
-            <span className="hidden xs:inline">+998 95 805</span>
-          </a>
-        </div>
+  <a 
+    href="tel:+998958055151" 
+    className="flex items-center gap-2 bg-pink-500 text-white px-3 md:px-4 py-2 rounded-full text-sm font-bold hover:bg-pink-600 transition-all shadow-md shadow-pink-100 active:scale-95"
+  >
+    <Phone size={16} fill="currentColor" />
+    {/* 'hidden xs:inline' o'rniga 'hidden min-[400px]:inline' ishlatish tavsiya etiladi yoki shunchaki 'hidden md:inline' */}
+    <span className="hidden sm:inline">+998 95 805</span>
+  </a>
+</div>
       </div>
     </nav>
   );
