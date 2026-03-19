@@ -85,7 +85,7 @@ const Navbar = () => {
   >
     <Phone size={16} fill="currentColor" />
     {/* 'hidden xs:inline' o'rniga 'hidden min-[400px]:inline' ishlatish tavsiya etiladi yoki shunchaki 'hidden md:inline' */}
-    <span className="hidden sm:inline">+998 95 805</span>
+    <span className="hidden sm:inline">+998 95 805 51 51</span>
   </a>
 </div>
       </div>
