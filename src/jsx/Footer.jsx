@@ -90,12 +90,12 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={18} className="text-pink-500 shrink-0" />
-                <span className="text-gray-600">г. Сургут, ул. Примерная, дом 12</span>
+                <span className="text-gray-600">Чиланзар, 6-й квартал</span>
               </li>
               <li className="flex items-start gap-3">
                 <Clock size={18} className="text-pink-500 shrink-0" />
                 <span className="text-gray-600">
-                  <span className="font-bold">08:00 – 21:00</span> <br /> 
+                  <span className="font-bold">08:00 – 23:00</span> <br /> 
                   <span className="text-[11px] text-pink-400 uppercase font-bold tracking-tighter">Доставка работает 24/7</span>
                 </span>
               </li>
