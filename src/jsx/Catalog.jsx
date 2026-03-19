@@ -364,7 +364,7 @@ export default function Catalog() {
       </div>
 
       {/* FILTER */}
-      <div className="flex justify-center gap-4 text-gray-500 mb-12 overflow-x-auto pb-4 whitespace-nowrap scrollbar-hide">
+      <div className="flex justify-center gap-4 text-gray-500 mb-12 overflow-x-auto pb-4 whitespace-nowrap scrollbar-hide px-2 snap-x snap-mandatory">
         {[
           { id: "bouquet", label: "Сборные букеты" },
           { id: "piece", label: "Цветы по штучно" },
@@ -374,7 +374,7 @@ export default function Catalog() {
           <button
             key={tab.id}
             onClick={() => setActive(tab.id)}
-            className={`px-6 py-2 rounded-full transition-all duration-300 border ${
+            className={`px-4 md:px-6 py-2 text-sm md:text-base rounded-full transition-all duration-300 border shrink-0 ${
               active === tab.id
                 ? "bg-pink-500 text-white border-pink-500 shadow-md"
                 : "bg-white border-gray-200 hover:border-pink-300 hover:text-pink-500"

@@ -75,7 +75,7 @@ const Lakatsiya = () => {
                   className="relative z-10 bg-white p-6 rounded-full shadow-2xl hover:bg-pink-500 group transition-all duration-500 cursor-pointer flex items-center justify-center border-4 border-pink-100"
                   title="Открыть в Google Maps"
                 >
-                  <MapPin size={40} className="text-pink-500 group-hover:text-white transition-colors" />
+                  <MapPin size={40} className="md:w-10 md:h-10 text-pink-500 group-hover:text-white transition-colors" />
                 </a>
               </div>
               <span className="bg-white/80 backdrop-blur-sm px-4 py-2 rounded-full text-xs font-bold text-gray-700 shadow-sm border border-white">
